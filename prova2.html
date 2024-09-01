@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marvel studios</title>
+    <style>
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #0c0c0c;
+            color: white;
+        }
+        header {
+            background-color: #151515;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 180px;
+        }
+        header form {
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .search {
+            border: none; 
+            padding: 7px; 
+        }
+
+        header input[type="submit"] {
+            background-color: #e62429; 
+            border: none; 
+            color: white; 
+            padding: 5px 10px;
+            cursor: pointer; 
+        }
+        nav {
+            background-color: #0f0f0f;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px solid #e62429;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #e62429;
+        }
+
+        .banner {
+            background-image:url(imagens/banner3.jpg); 
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .principal {
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .titulo{
+            font-size: 30px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            letter-spacing: 1px;
+            padding: 20px;
+            margin: 0;
+            color: #888;
+            text-align: left;
+        }
+        .titulo:hover{
+            color: #e62429;
+
+        }
+
+        .div1 {
+            background-color: #1c1c1c;
+            width: 280px;
+            margin: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .div1 img {
+            width: 100%;
+            height:80%;
+        }
+
+        .div1:hover {
+            transform: scale(1.05);
+        }
+
+        .div1 h3 {
+            padding: 20px;
+            margin: 0;
+            color: #e62429;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #151515;
+            padding: 20px;
+            text-align: center;
+            color: #888;
+            border-top: 2px solid #e62429;
+        }
+
+        footer a {
+            color: #e62429;
+            text-decoration: none;
+            font-size:small;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            font-size:x-small;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="imagens/marvellogo.png" alt="Marvel Logo">
+        <form>
+            <input class="search" name="q" placeholder="Pesquisa" />
+            <input type="submit" value="Ir"/>
+        </form>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">NOTÍCIAS</a></li>
+            <li><a href="#">COMICS</a></li>
+            <li><a href="#">FILMES</a></li>
+            <li><a href="#">JOGOS</a></li>
+            <li><a href="#">MAIS</a></li>
+        </ul>
+    </nav>
+
+    <div class="banner"></div>
+    <br>
+    <p><h2 class="titulo">SAGA VINGADORES</h2></p>
+    <br>
+    <div class="principal">
+        <div class="div1">
+            <img src="imagens/avengers.webp" alt="The Avengers">
+            <h3>OS VINGADORES</h3>
+        </div>
+        <div class="div1">
+            <img src="imagens/ultron.webp" alt="Age of Ultron">
+            <h3>OS VINGADORES: ERA DE ULTRON</h3>
+        </div>
+        <div class="div1">
+            <img src="imagens/infinity war.webp" alt="Infinity War">
+            <h3>OS VINGADORES: GUERRA INFINITA</h3>
+        </div>
+        <div class="div1">
+            <img src="imagens/endgame.jpg" alt="End Game">
+            <h3>OS VINGADORES: ULTIMATO</h3>
+        </div>
+    </div>
+    <br>
+    <p><h2 class="titulo">SERIES</h2></p>
+    <br>
+    <div class="principal">
+        <div class="div1">
+            <img src="imagens/loki.jpg" alt="loki">
+            <h3>LOKI</h3>
+        </div>
+        <div class="div1">
+            <img src="imagens/wandavision.jfif" alt="wandavision">
+            <h3>WANDA VISION</h3>
+        </div>
+        <div class="div1">
+            <img src="imagens/moonknigt.jpg" alt="moonknight">
+            <h3>CAVALEIRO DA LUA</h3>
+        </div>
+        <div class="div1">
+            <img src="imagens/daredevil.jfif" alt="daredevil">
+            <h3>DEMOLIDOR</h3>
+        </div>
+    </div>
+    <br>
+    <p><h2 class="titulo">VOCÊ PODE GOSTAR</h2></p>
+    <br>
+    <div class="principal">
+        <div class="div1">
+            <img src="imagens/deadpoolewolverine.jpg" alt="deadpoolewolverine">
+            <h3>DEADPOOL E WOLVERINE</h3>
+        </div>
+        <div class="div1">
+            <img src="imagens/spider.jpg" alt="spiderverse">
+            <h3>HOMEM-ARANHA: ATRAVÉS DO ARANHAVERSO</h3>
+        </div>
+        <div class="div1">
+            <img src="imagens/captain.jpg" alt="guardiansofthegalaxy">
+            <h3>CAPITÃO AMÉRICA: O SOLDADO INVERNAL</h3>
+        </div>
+        <div class="div1">
+            <img src="imagens/wakanda.jpg" alt="wakandaforever">
+            <h3>PANTERA NEGRA</h3>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Marvel Entertainment, LLC. All Rights Reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Cinematographic Universe</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            background-color: #222;
+            color: #e0e0e0;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url(imagens/banner3.jpg);
+            background-size: cover; /* Ajuste para cobrir toda a área */
+            background-position: center;
+            background-size: 1300px;
+            padding-top:200px;
+            background-repeat: no-repeat;
+            height: 300px;
+            position: relative; /* Permite posicionar elementos filhos */
+            overflow: hidden; /* Garante que o desfoque não saia da área do cabeçalho */
+            background-color:#080808;
+        }
+
+        h1 {
+            position: absolute; /* Posiciona o título no canto superior esquerdo */
+            top: 20px; /* Espaço do topo */
+            left: 20px; /* Espaço da esquerda */
+            color: #ffffff;
+            font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 50px;
+            margin: 0;
+            padding: 10px 20px;
+            background-color: rgba(255, 0, 0, 0.445); /* Fundo preto translúcido */
+            border-radius: 5px;
+        }
+
+        nav {
+            background-color: transparent; /* Totalmente transparente */
+            height: 50px;
+            display: flex;
+            margin-bottom: 10px;
+            position: fixed; /* Fixa o nav no topo da página */
+            top: 0; /* Posiciona no topo */
+            width: 100%; /* Ocupa 100% da largura */
+            z-index: 1000; /* Garante que o nav fique acima de outros elementos */
+            font-family: 'Roboto', sans-serif; /* Fonte Roboto */
+            color: white; /* Cor do texto no nav */
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            flex: 10;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+
+        nav li {
+            flex: 1;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 7px 10px;
+            display:inline-table;
+            font-weight: 300;
+            text-shadow: 1px 1px 1px #080808;
+            
+        }
+
+        nav form {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            justify-content: flex-end;
+        }
+
+        nav input[type="search"] {
+            border: none; /* Remove borda */
+            padding: 7px; /* Adiciona espaçamento interno */
+            border-radius: 4px; /* Adiciona bordas arredondadas */
+        }
+
+        nav input[type="submit"] {
+            background-color: #630707; /* Cor do botão */
+            border: none; /* Remove borda */
+            color: white; /* Cor do texto */
+            padding: 5px 10px; /* Adiciona espaçamento interno */
+            border-radius: 4px; /* Adiciona bordas arredondadas */
+            cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+        }
+
+        .div1 {
+            border-radius: 8px;
+            background-color: #333;
+            width: 300px;
+            height: auto;
+            padding: 10px;
+            margin: 10px;
+            float: left;
+            margin-left: 50px;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            margin-top: 60px; 
+        }
+
+        aside {
+            background-color: rgba(255, 238, 238, 0.678);
+            flex: 1;
+            margin-left: 10px;
+        }
+
+        footer {
+            background-color: #121212;
+            width: 100%;
+            height: 2.5rem;
+            text-align: center;
+            color: #888;
+            padding: 10px 0;
+            position: relative; 
+        }
+
+        a {
+            color: #00b7ff;
+            text-decoration: none;
+            font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .principal {
+            margin: auto;
+            justify-content: center;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        img.imagensra {
+            width: 100%; 
+            height: auto; 
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 0px 70px;
+        }
+    </style>
+</head>
+<body>
+ 
+    <header>
+        <h1>MARVEL STUDIOS</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a target="_blank" href="https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb">NEWS</a></li>
+            <li><a target="_blank" href="https://www.youtube.com/channel/UCq19-LqvG35A-30oyAiPiqA">MOVIES</a></li>
+            <li><a target="_blank" href="https://www.instagram.com/radiohead/">COMICS</a></li>
+            <li><a target="_blank" href="https://twitter.com/radiohead">MORE</a></li>
+        </ul>
+        <form>
+            <input type="search" name="q" placeholder="Pesquisa" />
+            <input type="submit" value="Ir" />
+        </form>
+    </nav>
+
+  
+    <main>
+        <div class="principal">
+            <div class="div1">
+                <h2>FASE 1</h2>
+                <a href="https://open.spotify.com/intl-pt/track/70LcF31zb1H0PyJoS1Sx1r" title="Escute no Spotify">
+                    <img src="imagens/creep.jpg" alt="" class="imagensra">
+                </a>
+            </div>
+
+            <div class="div1">
+                <h2>FASE 2</h2>
+                <a href="https://open.spotify.com/track/0YJ9FWWHn9EfnN0lHwbzvV" title="Escute no Spotify">
+                    <img src="imagens/jigsawfalling.jpg" alt="" class="imagensra">
+                </a>
+            </div>
+
+            <div class="div1">
+                <h2>FASE 3</h2>
+                <a href="https://open.spotify.com/track/63OQupATfueTdZMWTxW03A" title="Escute no Spotify">
+                    <img src="imagens/karma police.jpeg" alt="" class="imagensra">
+                </a>
+            </div>
+
+            <div class="div1">
+                <h2>FASE 4</h2>
+                <a href="https://open.spotify.com/track/1bSpwPhAxZwlR2enJJsv7U" title="Escute no Spotify">
+                    <img src="imagens/nosurprises.jpeg" alt="" class="imagensra">
+                </a>
+            </div>
+
+            <div class="div1">
+                <h2>HIGH AND DRY</h2>
+                <a href="https://open.spotify.com/intl-pt/track/2a1iMaoWQ5MnvLFBDv4qkf" title="Escute no Spotify">
+                    <img src="imagens/highanddry.jpg" alt="" class="imagensra">
+                </a>
+            </div>
+
+            <div class="div1">
+                <h2>FAKE PLASTIC TREES</h2>
+                <a href="https://open.spotify.com/track/73CKjW3vsUXRpy3NnX4H7F" title="Escute no Spotify">
+                    <img src="imagens/fakeplastictrees.jpg" alt="" class="imagensra">
+                </a>
+            </div>
+
+            <div class="div1">
+                <h2>EXIT MUSIC (FOR A FILM)</h2>
+                <a href="https://open.spotify.com/track/0QwQbO7G7hDe9uzU1iMzTf" title="Escute no Spotify">
+                    <img src="imagens/exitmusic.png" alt="" class="imagensra">
+               
