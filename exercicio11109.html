@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de imagens</title>
+    <style>
+        body{
+            background-color: rgb(212, 206, 247);
+        }
+        .imga{
+           border-radius: 8px;
+           width: 200px;
+           height: auto;
+        }
+        .imgb {
+            border-radius: 50%;
+            width: 200px;
+            height: auto;
+        }
+        .imgba {
+            border-radius: 40%;
+            width: 200px;
+            height: auto;
+        }
+        h1{
+            text-align: center;
+            color: rgb(59, 15, 100);
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+        }
+        .imgc {
+            border: 1px solid #301283;
+            border-radius: 4px;
+            padding: 5px;
+            width: 150px;
+        }
+        .imgd {
+            border: 1px solid #02033f;
+            border-radius: 4px;
+            padding: 5px;
+            width: 150px;
+        }
+        .imgd:hover{
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+        }
+        .imge{
+            max-width: 100%;
+            height: auto;
+        }
+        .imgf {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+        }
+        div.polaroid {
+            width: 40%;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin-bottom: 25px;
+            display: inline-block;
+        }
+        div.container {
+            text-align: center;
+            padding: 10px 20px;
+            display: flexbox;
+        }
+        .imgg{
+            opacity: 0.2;
+            width: 300px;
+        }
+        .imgh{
+            opacity: 0.5;
+            width: 300px;
+        }
+        .imgi{
+            opacity: 0.9;
+            width: 300px;
+        }
+        .imgj{
+            width: 300px;
+            height: auto;
+            opacity: 0.3;
+        }
+        .topleft{
+            position: absolute;
+            top: 8px;
+            left: 330px;
+            font-size: 18px;
+        }
+        .topright {
+            position: absolute;
+            top: 8px;
+            right: 330px;
+            font-size: 18px;
+        }
+        .bottomleft{
+            position: absolute;
+            top: 280px;
+            left: 330px;
+            font-size: 18px;
+        }
+        .bottomright{
+            position: absolute;
+            top: 280px;
+            right: 330px;
+            font-size: 18px;
+        }
+        .center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+        }
+        .container {
+            position: relative;
+        }
+        .imgk{
+            filter: blur(4px);
+            width: 200px;
+        }
+        .imgl{
+            filter: brightness(250%);
+            width: 200px;
+        }
+        .imgm{
+            filter: invert(100%);
+            width: 200px;
+        }
+        .container2{
+            position: relative;
+            width: 48%;
+            display: inline-block;
+        }
+        .container2:hover .overlay{
+            opacity: 1;
+        }
+        .imgn{
+            display: block;
+            width: 300px;
+        }
+        .overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: auto;
+            width: 300px;
+            opacity: 0;
+            transition: .5s ease;
+            background-color:#301283;
+        }
+        .text{
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);           
+        }
+        .container3{
+            position: relative;
+            width: 48%;
+            display: inline-block;
+        }
+        .imgo {
+            opacity: 1;
+            display: block;
+            width: 300px;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            right: 32%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%)
+        }
+        .container3:hover .image {
+            opacity: 0.3;
+        }
+        .container3:hover .middle {
+            opacity: 1;
+        }
+        .text2 {
+            background-color:#301283;
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+            align-items: center;
+        }
+        .imgp{
+            width: 300px;
+        }
+        .imgp:hover{
+            transform:scaleX(-1)
+        }
+       
+    </style>
+</head>
+<body>
+    <main>
+        <i><h1>estilos de imagens</h1></i>
+        <div>
+            <h2>imagens arredondadas</h2>
+            <p>arredonda a borda da imagem em diferentes niveis</p>
+            <img src="imagens/sy.jpeg" alt="" class="imga">
+            <img src="imagens/sy.jpeg" alt="" class="imgb">
+            <img src="imagens/sy.jpeg" alt="" class="imgba">
+        </div>
+        <div>
+            <h2>imagens em miniatura</h2>
+            <p>deixa a imagem como uma moldura</p>
+            <img src="imagens/sy.jpeg" alt="" class="imgc">
+            <a target="_blank" href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.letras.mus.br/clean-bandit/symphonies/traducao.html&ved=2ahUKEwjZuNnpuLuIAxV8ILkGHWWECM8QFnoECD8QAQ&usg=AOvVaw3hYvaA5peggBV385D7hhWs"><img src="imagens/sy.jpeg" alt="" class="imgd"> </a>
+        </div>
+        <div>
+            <h2>imagem responsiva</h2>
+            <p>As imagens responsivas são ajustadas automaticamente para caber no tamanho da tela.</p>
+            <img src="imagens/sy.jpeg" alt="" class="imge">
+        </div>
+        <div>
+            <h2>imagem centralizada</h2>
+            <p>centraliza a imagem na tela</p>
+            <img src="imagens/sy.jpeg" alt="" class="imgf">
+        </div>
+        <h2>imagens polaroids</h2>
+        <p>deixa a imagem como uma polaroid</p>
+        <div class="polaroid">
+            <img src="imagens/s.jpeg" alt="5 Terre" style="width:100%">
+            <div class="container">
+            <p>utopia</p>
+            </div>
+          </div>
+          <div class="polaroid">
+            <img src="imagens/sy.jpeg" alt="Norther Lights" style="width:100%">
+            <div class="container">
+            <p>utopia</p>
+            </div>
+          </div>
+          <div>
+            <h2>imagens tranparentes</h2>
+            <p>A propriedade opacity especifica a transparência de um elemento. Quanto menor o valor, mais transparente:</p>
+            <img src="imagens/sy.jpeg" alt="" class="imgg">
+            <img src="imagens/sy.jpeg" alt="" class="imgh">
+            <img src="imagens/sy.jpeg" alt="" class="imgi">
+        </div>
+        <h2>imagens com texto </h2>
+        <p>coloca texto sobre as imagens de fundo</p>
+        <div class="container">
+            <img src="imagens/sy.jpeg" class="imgj">
+            <div class="topleft">Top Left</div>
+            <div class="topright">Top Right</div>
+            <div class="bottomleft">bottom left</div>
+            <div class="bottomright">bottom Right</div>
+            <div class="center">center</div>
+        </div>
+        <div>
+            <h2>imagens com filtros</h2>
+            <p>muda as cores e tamanhos da imagem com diversos fitros</p>
+            <img src="imagens/sy.jpeg" class="imgk">
+            <img src="imagens/sy.jpeg" class="imgl">
+            <img src="imagens/sy.jpeg" class="imgm">
+        </div>
+
+        <h2>imagens com sobreposição</h2>
+        <h4>desvanecimento no texto</h4>
+        <p>transição de imagem para texto com hover</p>
+        <div class="container2">
+            <img src="imagens/sy.jpeg" class="imgn">
+            <div class="overlay">
+                <div class="text">Hello world!</div>
+            </div>
+        </div>
+        <h4>desvanecimento em uma caixa</h4>
+        <p>aparece uma mensagem no centro da imagem com hover</p>
+        <div class="container3">
+            <img src="imagens/sy.jpeg" class="imgo">
+            <div class="middle">
+                <div class="text2"> Hello world!</div>
+            </div>
+        </div>
+        <div>
+            <h2>imagem invertida</h2>
+            <p>inverte a imagem com hover</p>
+            <img src="imagens/sy.jpeg" alt="" class="imgp">
+        </div>
+        
+    </main>
+</body>
+</html>
