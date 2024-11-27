@@ -1,77 +1,136 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>InuYasha</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body style="background-color: #f8f9fa;">
-    <!-- Cabeçalho -->
-    <header class="bg-danger text-white text-center py-4">
-      <h1 class="display-4">InuYasha</h1>
-      <p class="lead">Uma jornada épica através do Japão feudal.</p>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InuYasha</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      color: #2c2c2c;
+    }
+    header {
+      background: linear-gradient(135deg, #850000, #f4a4a4);
+      color: white;
+    }
+    header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 4rem;
+    }
+    .btn-custom {
+      background-color: #850000;
+      color: white;
+      border-radius: 0;
+    }
+    .btn-custom:hover {
+      background-color: #aa3c3c;
+    }
+    .card img {
+      height: 250px;
+      object-fit: cover;
+    }
+    .section-title {
+      font-family: 'Cinzel', serif;
+      font-size: 2.5rem;
+      color: #850000;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    footer {
+      background-color: #850000;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
 
-    <!-- Conteúdo principal -->
-    <main class="container mt-5">
-      <!-- Sobre -->
-      <section class="mb-5">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <img src="https://via.placeholder.com/500x300" alt="Imagem de InuYasha" class="img-fluid rounded">
-          </div>
-          <div class="col-md-6">
-            <h2 class="text-danger">Sobre o Anime</h2>
-            <p class="text-justify">*InuYasha* é uma série de anime baseada no mangá de Rumiko Takahashi. A história segue InuYasha, um meio-youkai, e Kagome, uma estudante que viaja no tempo para o Japão feudal. Juntos, eles embarcam em uma missão para reunir os fragmentos da Joia de Quatro Almas.</p>
-            <a href="#" class="btn btn-danger">Saiba Mais</a>
-          </div>
+<!-- Header -->
+<header class="text-center py-5">
+  <h1>InuYasha</h1>
+  <p class="lead">Explore o mundo feudal e as aventuras épicas de InuYasha e seus amigos.</p>
+</header>
+
+<!-- Sobre o Anime -->
+<section class="container my-5">
+  <h2 class="section-title">Sobre o Anime</h2>
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <img src="https://www.viz.com/assets/images/inuyasha_keyart.jpg" class="img-fluid rounded shadow" alt="InuYasha Key Art">
+    </div>
+    <div class="col-md-6">
+      <p class="fs-5">
+        *InuYasha* é uma das obras-primas de Rumiko Takahashi, combinando ação, romance e fantasia. A série acompanha 
+        InuYasha, um meio-youkai, e Kagome, uma jovem que viaja no tempo, enquanto eles enfrentam perigos e buscam 
+        reconstruir a Joia de Quatro Almas.
+      </p>
+      <a href="https://www.viz.com/inuyasha" target="_blank" class="btn btn-custom">Leia Mais</a>
+    </div>
+  </div>
+</section>
+
+<!-- Personagens Principais -->
+<section class="container my-5">
+  <h2 class="section-title">Personagens Principais</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card border-0 shadow">
+        <img src="https://www.viz.com/assets/images/character_inuyasha.jpg" class="card-img-top" alt="InuYasha">
+        <div class="card-body text-center">
+          <h5 class="card-title">InuYasha</h5>
+          <p class="card-text">O herói meio-youkai em busca de justiça e redenção.</p>
         </div>
-      </section>
-
-      <!-- Personagens principais -->
-      <section class="mb-5">
-        <h2 class="text-center text-danger mb-4">Personagens Principais</h2>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <div class="card border-0">
-              <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle" alt="InuYasha">
-              <div class="card-body">
-                <h5 class="card-title">InuYasha</h5>
-                <p class="card-text">Um meio-youkai em busca de redenção.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card border-0">
-              <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle" alt="Kagome">
-              <div class="card-body">
-                <h5 class="card-title">Kagome</h5>
-                <p class="card-text">Uma jovem corajosa que viaja entre os tempos.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card border-0">
-              <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle" alt="Sesshoumaru">
-              <div class="card-body">
-                <h5 class="card-title">Sesshoumaru</h5>
-                <p class="card-text">O irmão mais velho de InuYasha, orgulhoso e poderoso.</p>
-              </div>
-            </div>
-          </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card border-0 shadow">
+        <img src="https://www.viz.com/assets/images/character_kagome.jpg" class="card-img-top" alt="Kagome">
+        <div class="card-body text-center">
+          <h5 class="card-title">Kagome</h5>
+          <p class="card-text">A jovem corajosa que viaja entre o presente e o passado.</p>
         </div>
-      </section>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card border-0 shadow">
+        <img src="https://www.viz.com/assets/images/character_sesshomaru.jpg" class="card-img-top" alt="Sesshoumaru">
+        <div class="card-body text-center">
+          <h5 class="card-title">Sesshoumaru</h5>
+          <p class="card-text">O irmão orgulhoso e poderoso de InuYasha.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <!-- Rodapé -->
-      <footer class="bg-dark text-white text-center py-3">
-        <p class="mb-0">Desenvolvido como exemplo de site com Bootstrap. Inspirado no anime *InuYasha*.</p>
-      </footer>
-    </main>
+<!-- Galeria de Imagens -->
+<section class="container my-5">
+  <h2 class="section-title">Galeria de Imagens</h2>
+  <div class="row g-3">
+    <div class="col-md-3">
+      <img src="https://www.viz.com/assets/images/inuyasha_gallery1.jpg" class="img-fluid rounded shadow" alt="Imagem 1">
+    </div>
+    <div class="col-md-3">
+      <img src="https://www.viz.com/assets/images/inuyasha_gallery2.jpg" class="img-fluid rounded shadow" alt="Imagem 2">
+    </div>
+    <div class="col-md-3">
+      <img src="https://www.viz.com/assets/images/inuyasha_gallery3.jpg" class="img-fluid rounded shadow" alt="Imagem 3">
+    </div>
+    <div class="col-md-3">
+      <img src="https://www.viz.com/assets/images/inuyasha_gallery4.jpg" class="img-fluid rounded shadow" alt="Imagem 4">
+    </div>
+  </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+pe2mIWJG7uXw4ibVsPJbPsTu0I65" 
-            crossorigin="anonymous"></script>
-  </body>
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 InuYasha Fan Page. Inspirado no anime criado por Rumiko Takahashi.</p>
+  <p><a href="https://www.viz.com/inuyasha" target="_blank" class="text-white">Visite o site oficial</a></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
