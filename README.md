@@ -1,6 +1,6 @@
 # Web Development
 
-This repository contains the materials and exercises from the **Web Development** subject, taught by Professor Ana Mamede in 2025.
+This repository contains the materials and exercises from the **Web Development** subject, taught by Ana Mamede in 2025.
 
 ---
 
